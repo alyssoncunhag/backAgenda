@@ -1,0 +1,135 @@
+/* Estilo geral */
+body {
+    background-color: #121212; /* Cor de fundo escura */
+    color: #fff; /* Texto claro */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da tela */
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container de login */
+.login-container {
+    width: 100%;
+    max-width: 400px; /* Largura máxima para telas grandes */
+    background-color: #1f1f1f; /* Fundo escuro da caixa de login */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin: 0 15px; /* Pequeno espaçamento lateral para evitar que fique colado nas bordas */
+}
+
+.login-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #9e2a2f; /* Vermelho escuro */
+}
+
+/* Estilo dos campos de input */
+.form-control {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.form-control:focus {
+    background-color: #444;
+    border-color: #9e2a2f; /* Vermelho escuro */
+    color: #fff;
+    box-shadow: none;
+}
+
+/* Estilo do botão */
+.btn-primary {
+    background-color: #9e2a2f; /* Vermelho escuro */
+    border-color: #9e2a2f;
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #7a1d1f; /* Vermelho mais escuro */
+    border-color: #7a1d1f;
+}
+
+/* Link de "Esqueci minha senha" */
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    font-size: 0.9rem;
+    color: #9e2a2f; /* Vermelho escuro */
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo da mensagem de erro */
+.alert-danger {
+    text-align: center;
+    font-weight: 600;
+    background-color: #ff3d00;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos de input no grupo */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group-text {
+    background-color: #333;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 8px 0 0 8px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 30px;
+    }
+
+    .login-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .forgot-password a {
+        font-size: 0.8rem;
+    }
+}
