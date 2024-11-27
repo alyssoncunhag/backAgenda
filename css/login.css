@@ -63,7 +63,10 @@ body {
     border-radius: 8px;
     width: 100%;
     font-weight: 600;
+    text-transform: uppercase; /* Transformar o texto para maiúsculo */
+    color: white; /* Cor das letras em branco */
 }
+
 
 .btn-primary:hover {
     background-color: #7a1d1f; /* Vermelho mais escuro */
@@ -95,7 +98,16 @@ body {
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 20px;
+    width: 100%; /* Ajusta a largura */
+    max-width: 400px; /* Limita o tamanho máximo */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza horizontalmente */
+    position: absolute;
+    top: 10px; /* Ajusta a posição para o topo */
+    left: 0;
+    right: 0;
 }
+
 
 /* Estilo dos campos de input no grupo */
 .input-group {
