@@ -11,7 +11,7 @@ if (!empty($_POST['email'])) {
         header("Location: index.php");
         exit;
     } else {
-        echo '<div class="alert alert-danger" role="alert">Usuário e/ou senha incorreto!</div>';
+        echo '<div class="alert alert-danger error-message" role="alert">Usuário e/ou senha incorreto!</div>';
     }
 }
 ?>

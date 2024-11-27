@@ -139,3 +139,28 @@ body {
         font-size: 0.8rem;
     }
 }
+
+/* Estilo para a mensagem de erro */
+.error-message {
+    position: absolute;
+    top: 20px; /* Distância do topo da tela */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Pode ajustar a largura conforme necessário */
+    max-width: 400px; /* Largura máxima para não esticar demais */
+    padding: 10px;
+    background-color: #f8d7da; /* Cor de fundo do alerta */
+    color: #721c24; /* Cor do texto do alerta */
+    border: 1px solid #f5c6cb; /* Cor da borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center;
+    z-index: 9999; /* Garante que o alerta fique acima de outros elementos */
+}
+
+/* Responsividade da mensagem de erro */
+@media (max-width: 600px) {
+    .error-message {
+        width: 95%; /* Ajusta a largura em telas menores */
+    }
+}
+
