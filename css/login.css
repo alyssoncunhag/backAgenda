@@ -54,23 +54,26 @@ body {
     box-shadow: none;
 }
 
-/* Estilo do botão */
 .btn-primary {
     background-color: #9e2a2f; /* Vermelho escuro */
     border-color: #9e2a2f;
-    font-size: 1.1rem;
-    padding: 12px;
+    font-size: 1rem;  /* Diminui o tamanho da fonte */
+    padding: 10px;  /* Diminui o padding */
     border-radius: 8px;
     width: 100%;
     font-weight: 600;
     text-transform: uppercase; /* Transformar o texto para maiúsculo */
     color: white; /* Cor das letras em branco */
+    margin-top: 20px; /* Aumenta o espaçamento entre o botão e os campos de input */
 }
-
 
 .btn-primary:hover {
     background-color: #7a1d1f; /* Vermelho mais escuro */
     border-color: #7a1d1f;
+}
+
+.input-group {
+    margin-bottom: 30px; /* Aumenta o espaçamento entre os campos de input e o botão */
 }
 
 /* Link de "Esqueci minha senha" */
@@ -83,42 +86,33 @@ body {
     font-size: 0.9rem;
     color: #9e2a2f; /* Vermelho escuro */
     text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px; /* Espaçamento entre o link e o próximo botão */
 }
 
 .forgot-password a:hover {
     text-decoration: underline;
 }
 
-/* Estilo da mensagem de erro */
-.alert-danger {
-    text-align: center;
-    font-weight: 600;
-    background-color: #ff3d00;
-    color: #fff;
+/* Estilo do botão "Voltar para a Home" */
+.btn-danger {
+    background-color: #9e2a2f; /* Vermelho escuro */
+    border-color: #9e2a2f;
+    font-size: 1rem;
+    padding: 12px;
     border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 20px;
-    width: 100%; /* Ajusta a largura */
-    max-width: 400px; /* Limita o tamanho máximo */
-    margin-left: auto;
-    margin-right: auto; /* Centraliza horizontalmente */
-    position: absolute;
-    top: 10px; /* Ajusta a posição para o topo */
-    left: 0;
-    right: 0;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none; /* Remove o risco/underline */
 }
 
-
-/* Estilo dos campos de input no grupo */
-.input-group {
-    margin-bottom: 20px;
-}
-
-.input-group-text {
-    background-color: #333;
-    border: 1px solid #444;
-    color: #fff;
-    border-radius: 8px 0 0 8px;
+.btn-danger:hover {
+    background-color: #7a1d1f; /* Mantém o mesmo vermelho escuro */
+    border-color: #7a1d1f;
+    color: white; /* Garante que a cor do texto permaneça branca */
+    text-decoration: none; /* Remove o risco/underline no hover também */
 }
 
 /* Responsividade */

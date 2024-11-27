@@ -22,7 +22,7 @@ if (!empty($_POST['email'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BackAgenda - Login</title>
-    <link rel="stylesheet" href="css/login.css"> <!-- Conectando o arquivo CSS -->
+    <link rel="stylesheet" href="css/login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
@@ -32,12 +32,12 @@ if (!empty($_POST['email'])) {
         <div class="login-container">
             <h1>Login</h1>
             <form method="POST">
-                <!-- Input Email -->
+     
                 <div class="input-group">
                     <span class="input-group-text"><i class="bi bi-envelope"></i></span>
                     <input type="email" class="form-control" name="email" placeholder="Digite seu email" required>
                 </div>
-                <!-- Input Senha -->
+              
                 <div class="input-group">
                     <span class="input-group-text"><i class="bi bi-lock"></i></span>
                     <input type="password" class="form-control" name="senha" placeholder="Digite sua senha" required>
@@ -48,6 +48,8 @@ if (!empty($_POST['email'])) {
                     <a href="esqueceuSenha.php">Esqueci minha senha</a>
                 </div>
             </form>
+         
+            <a href="home.php" class="btn btn-danger mt-3 w-100">Voltar para a Home</a>
         </div>
     </div>
 
