@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 05/11/2024 às 01:21
+-- Tempo de geração: 27/11/2024 às 22:45
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -44,8 +44,11 @@ CREATE TABLE `contatos` (
 --
 
 INSERT INTO `contatos` (`id`, `nome`, `telefone`, `endereco`, `dt_nasc`, `descricao`, `linkedin`, `email`, `foto`) VALUES
-(5, 'xupisco', 'ldaslcsd', 'fdsgdfs', '2024-08-07', 'gfadga', 'fgdaga', 'eduarodmaoacpae@gmail.com', 'faga'),
-(6, 'rato', 'bbbbb', 'aaaa', '2024-08-14', 'sfdsfdsd', 'fdsfds', 'gato', 'treco');
+(5, 'Alyssonzinho', '(42)99837-7160', 'Rua Quem Leu é Gay - 6969', '2003-03-24', 'Valorant é uma merda, CS é muito superior mas eu sou ruim no CS, então fico no Valorant.', 'alyssoncunhag', 'alyssoncunhag@gmail.com', '591f2650656a4b83cae47945dfeeb8f8.jpg'),
+(6, 'Maxixo Baitola', '(42)96969-6969', 'Rua do Escorrega na Peça', '2005-08-14', 'Faz parte do movimento LGBT e luta pela igualdade de gênero', 'viadinfazjob', 'maxixo@gmail.com', '9b11b9a6fffaef4d55dfe9b6f1c11d76.jpg'),
+(7, 'VTXP Buzi', '(42)22424-2424', 'Rua do Escorrega na Grandona', '2424-04-24', 'Escravo da Vivo', 'vtzinchupaengole', 'vtxp@gmail.com', 'vt.gif'),
+(8, 'Luis Palha', '(42)omais-viado', 'palhabatata@gmail.com', '2011-11-11', 'O cara não gosta de batata palha na pizza kkkkkkkkkkkkkkkkkkkkk', 'palhinhabuzi123', 'lulupalha@gmail.com', 'palha.png'),
+(10, 'Cachorrinho bem doidinho', '(42)aauau-auau', 'Casinha Azul  - 1245', '2011-11-14', 'auauauau', 'auauau', 'auauau@gmail.com', 'cachorro.gif');
 
 -- --------------------------------------------------------
 
@@ -78,11 +81,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `permissoes`) VALUES
-(2, 'Usuario 2', 'usuario2@gmail.com', '750c52614b0013a7693af0787bb3218b', 'SUPER, ADD, EDIT'),
-(3, 'Usuario 3', 'usuario3@gmail.com', 'b8dba2dfede3bcb244498c15fed2229a', 'SUPER'),
-(4, 'Usuario 4', 'usuario4@gmail.com', 'a0d964c59636bba44764c1f668f3d15e', 'EDIT'),
-(5, 'Usuario 5', 'usuario5@gmail.com', 'a705eb0f3e4dba89dd3be2ecce5cea74', 'ADD, DELETE'),
-(6, 'Usuario 6', 'usuario6@gmail.com', '28500a9d2c1c4a651bcce3eab87c1c1a', 'SUPER, ADD');
+(7, 'Alysson', 'alysson@admin.com', '$2y$10$QSRD6ayTdL9Kxt6c8.txTuE5GhO3T1/MxIaBLxudSGJH7c8QU1IFm', 'SUPER, ADD, EDIT, DELETE'),
+(9, 'Bruna', 'bruna@gmail.com', '92eb5ffee6ae2fec3ad71c777531578f', 'SUPER, ADD, EDIT, DELETE');
 
 --
 -- Índices para tabelas despejadas
@@ -114,7 +114,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `contatos`
 --
 ALTER TABLE `contatos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de tabela `foto_contato`
@@ -126,7 +126,7 @@ ALTER TABLE `foto_contato`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
